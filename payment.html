@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+    <div class="main">
+        <div class="topbar1"></div>
+        <div class="topbar2">
+            <div class="container1">
+                <div class="logout-btn">
+                    <a href="Logout.jsp"><b>LOGOUT</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container2">
+                <div class="navbar">
+                    <div class="navbar">
+                        <a href="Homepage.jsp">HOME</a>
+                        <a href="Buydi.html">BUY</a>
+                        <a href="Orders.jsp">CART</a>
+                        <a href="ContactUs.html">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="active">
+        <div class="filler"></div>
+            <h2 style="text-align:center;">CART CHECKOUT</h2>
+            <form action="payment.jsp" method="post">
+                <div class="bigcard">
+                    <div class="bigcard1">
+                        <h2>Billing Address</h2>
+                        <div class="bigcard11">
+                        <h3>Full Name</h3><input type='text' name='fullname' placeholder="John Doe"required>
+                        <h3>Email address</h3><input type='text' name='email' placeholder="JohnDoe@email.com" required>
+                        <h3>Phone Number</h3><input type='text' name='phoneno' placeholder="1234567890" required>
+                        <h3>Address</h3><input type='text' name='address' placeholder="Avenue Street" required>
+                        <h3>City</h3><input type='text' name='city' placeholder="Hyderabad" required>
+                        <h3>State</h3><input type='text' name='state' placeholder="Delhi" required>
+                        </div>
+                    </div>
+
+                    <div class="bigcard2">
+                        <h2>Payment Details</h2>
+                        <div class="bigcard22">
+                        <h3>Card Type</h3><input type='text' name='chtype' placeholder="Debit/Credit"required>
+                        <h3>Card Holder Name</h3><input type='text' name='chname' placeholder="JOhn Doe"required>
+                        <h3>Card Number</h3><input type='text' name='cnumber' placeholder="9087 8907 5678" required>
+                        <h3>Expiry Month</h3><input type='text' name='emonth' placeholder=" January" required>
+                        <h3>Expiry Year</h3><input type='text' name='eyear'placeholder="2000" required>
+                        <h3>CVV</h3><input type='text' name='cvv' placeholder="567" required>
+                    </div> 
+                        
+                    </div>
+                    <div class="big"><a href="invoice.jsp" ><button type="button"><b style="font-size: 20px;">Proceed Payment</b></button></a></div>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
